@@ -1,0 +1,31 @@
+<p>This is the register view.</p>
+
+        <div class="col-xs-12">
+                <form id="register">
+                  <div>
+                  <label></label>
+                  <input type="text" placeholder="Usuario" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Usuario'" ng-model="userData.nombre" id="nombre"/>
+                  </div>
+
+                  <div>
+                  <label></label>
+                  <input type="password" placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'" ng-model="userData.pass" id="pass"/>
+                  </div>
+
+
+                  <div>
+                  <label></label>
+                  <input type="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" ng-model="userData.email" id="pass"/>
+                  </div>
+                  
+                   <div>
+                  <label></label>
+                  <input type="hidden" ng-model="userData.tipo" id="tipo" value=1/>
+                  </div>
+
+
+                  <button type="submit" value="registrarse" ng-click="register()">Registrarse</button>
+
+                </form>
+             
+        </div>
